@@ -7,16 +7,16 @@ $(document).ready(function(){
 		$.ajax({
 			url: 'https://api.github.com/users/'+username,
 			data:{
-				client_id:'18686580c773cda30429',
-				client_secret:'1bc69bd1385ccd3e82fff34be4f7393a9550c8b0'
+				client_id:'Your client_id',
+				client_secret:'your client_secret'
 			}	//The user is what the data is that is been passed in the callback function  
 		}).done(function(user){
 			// console.log(user);
 			$.ajax({
 				url: 'https://api.github.com/users/'+username+'/repos',
 				data:{
-					client_id:'18686580c773cda30429',
-					client_secret:'1bc69bd1385ccd3e82fff34be4f7393a9550c8b0',
+					client_id:'Your client_id',
+					client_secret:'your client_secret',
 					sort: 'created: asc',
 					per_page: 5
 				}
